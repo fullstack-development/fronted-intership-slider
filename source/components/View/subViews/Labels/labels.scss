@@ -1,0 +1,35 @@
+.slider {
+  &__labels {
+    position: absolute;
+    color: #c4c4c4;
+
+    &_horizontal {
+      top: 18px;
+      width: 100%;
+    }
+
+    &_vertical {
+      left: 18px;
+      height: 100%;
+    }
+  }
+
+  &__labels-item {
+    position: absolute;
+    font: 12px Lato, sans-serif;
+    transform: translateX(-50%);
+
+    &:hover {
+      color: #000;
+    }
+
+    &_active {
+      color: #000;
+    }
+  }
+
+  &__labels_vertical .slider__labels-item {
+    position: absolute;
+    transform: translateY(50%);
+  }
+}

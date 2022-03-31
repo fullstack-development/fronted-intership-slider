@@ -1,0 +1,44 @@
+.slider {
+  &__knob {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 1.5px rgba(0, 0, 0, 0.2);
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    -ms-touch-action: none;
+    touch-action: none;
+
+    &:active {
+      cursor: grabbing;
+      cursor: -moz-grabbing;
+      cursor: -webkit-grabbing;
+    }
+
+    &:hover {
+      box-shadow: 0 0 5px 0.5px rgba(0, 0, 0, 0.5);
+    }
+
+    &_horizontal {
+      top: -6px;
+      left: 42%;
+      transform: translateX(-50%);
+    }
+
+    &_vertical {
+      bottom: 42%;
+      left: -6px;
+      transform: translateY(50%);
+    }
+
+    &_orange {
+      background: #e75735;
+    }
+
+    &_green {
+      background: #4eb7a8;
+    }
+  }
+}
